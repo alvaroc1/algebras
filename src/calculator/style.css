@@ -1,0 +1,91 @@
+:root {
+  --border-radius: 5px;
+  --spacing-outer: 20px;
+  --spacing-inner: 7px;
+  --color-outer: rgb(0, 0, 0);
+  --button-color-introduction: rgb(163, 163, 163);
+  --button-color-combinator: green;
+  --button-color-elimination: orange;
+}
+
+.ReactCalculator {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--spacing-outer);
+    box-sizing: border-box;
+    background-color: var(--color-outer);
+}
+
+.ReactCalculator > * {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ReactCalculator button {
+    font-weight: bold;
+    color: white;
+    cursor: default;
+}
+.ReactCalculator button:focus {
+    outline: none;
+}
+
+.ReactCalculator .InputPane {
+    border: var(--border);
+    border-top: 0;
+    height: 70px;
+    flex: 0 0 70px;
+    padding: var(--spacing-outer);
+    text-align: right;
+    font-size: 36px;
+    background: #dfe;
+}
+
+.ReactCalculator .ButtonPane {
+    height: 230px;
+    flex: 0 0 230px;
+    display: grid;
+    gap: var(--spacing-inner);
+    grid-gap: var(--spacing-inner);
+    padding-top: var(--spacing-inner);
+}
+
+.ReactCalculator .ButtonPane button {
+    background-color: var(--color-inner);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.ReactCalculator .ButtonPane .Introduction {
+    background-color: var(--button-color-introduction);
+}
+.ReactCalculator .ButtonPane .Combinator {
+    background-color: var(--button-color-combinator);
+}
+.ReactCalculator .ButtonPane .Elimination {
+    background-color: var(--button-color-elimination);
+}
+
+.ReactCalculator button:active {
+    box-shadow: 0 0 0 3px blue;
+}
+
+.ReactCalculator.highlight-introduction .Combinator, .ReactCalculator.highlight-introduction .Elimination,
+.ReactCalculator.highlight-combinators .Introduction, .ReactCalculator.highlight-combinators .Elimination,
+.ReactCalculator.highlight-elimination .Introduction, .ReactCalculator.highlight-elimination .Combinator,
+.ReactCalculator.highlight-introduction .InputPane,
+.ReactCalculator.highlight-combinators .InputPane,
+.ReactCalculator.highlight-elimination .InputPane
+ {
+    opacity: .4;
+}
