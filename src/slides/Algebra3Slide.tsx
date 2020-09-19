@@ -10,12 +10,12 @@ export default SlideData.create({
       <div>
         <ul style={{fontSize: 30, margin: '0 60px'}}>
           <li style={{marginBottom: 24}}>
-            <b>Concepts</b><br/>
-            Represent domain-specific notions. They encapsulate and hide implementation details.
+            <b>Introduction Forms</b>:
+            A way to create some of the concepts. To enter the algebra.
           </li>
           <li style={{marginBottom: 14}}>
-            <b>Combinators</b><br/>
-            A way to safely work within the algebra, unburdened by implementation details.
+            <b>Elimination Forms</b><br/>
+            Collapse the concepts. Exit the algebra.
           </li>
         </ul>
       </div>

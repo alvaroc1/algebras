@@ -16,5 +16,12 @@ export default SlideData.create({
         </div>
       </Center>
       </div>
-    </Base>
+    </Base>,
+  notes: `
+    You have some concepts, and some way to process the concepts, combine them, reduce them, etc.
+
+    But you have to "ENTER" the algebra from the outside world. 
+
+    And after you're done, you have to "EXIT" the algebra.
+  `
 })

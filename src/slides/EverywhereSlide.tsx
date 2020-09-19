@@ -14,7 +14,15 @@ const places = {
     'Money, Accounts, Balances',
     'Deposits: Dollar bills, coins, checks',
     'Transfers, bill pay, interest, loans, investments',
-    'Withdrawals',
+    'Withdrawals: Check identity, cash out',
+    'lisp'
+  ] as Place,
+  employees: [
+    'Human Resources',
+    'Employees, Managers',
+    'Hiring: Interviews, On-boarding',
+    'Interactions, Commits, Deploys, Reviews',
+    'Quitting/Dismissal: Exit interview, collect equipment, etc',
     'lisp'
   ] as Place,
   compiler: [
@@ -28,7 +36,7 @@ const places = {
   list: [
     'Scala List',
     'List[A]',
-    'List.apply, Nil, List.empty, etc',
+    'List.apply, Nil, .toList, List.fill, List.range',
     '++, .map, .flatMap, .partition',
     '.head, .foldLeft, .size, .sum',
     'scala'
@@ -61,9 +69,9 @@ const places = {
 
 export default SlideData.create({
   elements: {
-    places: Stepper.states<keyof typeof places>(Object.keys(places) as unknown as (keyof typeof places)[], value => {
+    places: Stepper.states<keyof typeof places>(Object.keys(places) as unknown as (keyof typeof places)[], (value, active) => {
       const p = places[value]
-      return (
+      return active && (
         <div>
         <Center>
         <div style={{width: 600}}>
@@ -88,5 +96,9 @@ export default SlideData.create({
   render: elements => 
     <Base title='Algebras are Everywhere'>
       {elements.places}
-    </Base>
+    </Base>,
+  notes: `
+    The idea behind algebras can be found EVERYWHERE. 
+    Bank: 
+  `
 })

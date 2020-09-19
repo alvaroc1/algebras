@@ -10,6 +10,7 @@ import CalculatorSlide from './slides/CalculatorSlide'
 import AlgebraSlide from './slides/AlgebraSlide'
 import Algebra2Slide from './slides/Algebra2Slide'
 import CpmSlide from './slides/CpmSlide'
+import Algebra3Slide from './slides/Algebra3Slide'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +19,8 @@ ReactDOM.render(
       AlgebraSlide,
       AlgebraDslSlide,
       Algebra2Slide,
+      Algebra3Slide,
+      AlgebraSlide,
       CalculatorSlide,
       EverywhereSlide,
       CpmSlide

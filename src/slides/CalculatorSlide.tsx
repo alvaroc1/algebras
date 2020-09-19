@@ -27,5 +27,11 @@ export default SlideData.create({
         <Center>
           {elements.calculator}
         </Center>
-    </Base>
+    </Base>,
+  notes: `
+    Introduction forms: Enter the limited world of arithmetic
+
+    Combinators: Safely work within the confines of our algebra. We don't have to worry about whether the numbers were entered as 2 or 2.0 or 2.00.
+    Non-important details are dropped.
+  `
 })
