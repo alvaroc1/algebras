@@ -1,10 +1,10 @@
 import React from 'react'
 import SlideData from '@alvaroc1/present/components/SlideData'
-import Center from '@alvaroc1/present/layout/Center'
 import Base from '../parts/Base'
 import 'typeface-montserrat'
 import Stepper from '@alvaroc1/present/components/Stepper'
 import Snippet from '@alvaroc1/present/components/Snippet'
+import Layout from '@alvaroc1/layout/Layout'
 
 type Place = [string,string,string,string,string,string]
 
@@ -72,24 +72,30 @@ export default SlideData.create({
     places: Stepper.states<keyof typeof places>(Object.keys(places) as unknown as (keyof typeof places)[], (value, active) => {
       const p = places[value]
       return active && (
-        <div>
-        <Center>
-        <div style={{width: 600}}>
-          <h1>Algebra: {p[0]}</h1>
-          <h3 style={{marginBottom: -15}}>Concepts</h3>
-          <p><Snippet code={p[1]} language={p[5]} /></p>
+        <Layout.el>
+          <Layout.el centerX centerY width={600}>
+            <h1>Algebra: {p[0]}</h1>
+            <h3 style={{marginBottom: -15, marginTop: 0}}>Concepts</h3>
+            <Layout.column width='fill'>
+              <Snippet code={p[1]} language={p[5]} />
+            </Layout.column>
 
-          <h3 style={{marginBottom: -15}}>Introduction Forms</h3>
-          <p><Snippet code={p[2]} language={p[5]}/></p>
+            <h3 style={{marginBottom: -15, marginTop: 0}}>Introduction Forms</h3>
+            <Layout.column width='fill'>
+              <Snippet code={p[2]} language={p[5]}/>
+            </Layout.column>
 
-          <h3 style={{marginBottom: -15}}>Combinators</h3>
-          <p><Snippet code={p[3]} language={p[5]}/></p>
+            <h3 style={{marginBottom: -15, marginTop: 0}}>Combinators</h3>
+            <Layout.column width='fill'>
+              <Snippet code={p[3]} language={p[5]}/>
+            </Layout.column>
 
-          <h3 style={{marginBottom: -15}}>Elimination Forms</h3>
-          <p><Snippet code={p[4]} language={p[5]}/></p>
-        </div>
-        </Center>
-        </div>
+            <h3 style={{marginBottom: -15, marginTop: 0}}>Elimination Forms</h3>
+            <Layout.column width='fill'>
+              <Snippet code={p[4]} language={p[5]}/>
+            </Layout.column>
+          </Layout.el>
+        </Layout.el>
       )
     })
   },

@@ -13,6 +13,12 @@ const h1Styles: React.CSSProperties = {
   color: '#fc6986'
 }
 
+const bodyStyles: React.CSSProperties = {
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column'
+}
+
 export default (props: Props) => {
   const backgroundComp = 
     <Background/>
@@ -22,7 +28,9 @@ export default (props: Props) => {
       {props.title &&
         <h1 style={h1Styles}>{props.title}</h1>
       }
-      {props.children}
+      <div style={bodyStyles}>
+        {props.children}
+      </div>
     </Slide>
   )
 }

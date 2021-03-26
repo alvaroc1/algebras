@@ -1,10 +1,10 @@
 import React from 'react'
 import SlideData from '@alvaroc1/present/components/SlideData'
-import Center from '@alvaroc1/present/layout/Center'
 import Base from '../parts/Base'
 import { ReactCalculator } from '../calculator'
 import 'typeface-montserrat'
 import Stepper from '@alvaroc1/present/components/Stepper'
+import Layout from '@alvaroc1/layout/Layout'
 
 let calculation = ''
 
@@ -24,9 +24,9 @@ export default SlideData.create({
   },
   render: elements => 
     <Base>
-        <Center>
-          {elements.calculator}
-        </Center>
+      <Layout.el centerX centerY>
+        {elements.calculator}
+      </Layout.el>
     </Base>,
   notes: `
     Introduction forms: Enter the limited world of arithmetic
