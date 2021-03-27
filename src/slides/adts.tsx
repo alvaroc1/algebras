@@ -154,6 +154,48 @@ export default [
   SlideData.create({
     elements: {},
     render: elems => {
+      const samples = [
+        ['0', 'Nothing'],
+        ['1', 'Unit'],
+        ['2', 'Boolean'],
+        ['a * b', '(A, B)'],
+        ['a + b', 'Either[A, B]'],
+        ['2 = 1 + 1', dedent`
+                        enum Bool {
+                          case True
+                          case False
+                        }`],
+        ['1 + a', 'Option[A]']
+                      
+      ]
+      return (
+        <Base title='Digression: Algebra of Types'>
+          <Layout.el centerX centerY>
+            <table>
+              {samples.map(s => 
+                <tr>
+                  <td>
+                    <div style={{marginTop: -12, marginBottom: -12}}>
+                      <Snippet code={s[0]}/>
+                    </div>
+                  </td>
+                  <td>&rarr;</td>
+                  <td>
+                    <div style={{marginTop: -12, marginBottom: -12}}>
+                      <Snippet language='scala' code={s[1]}/>
+                    </div>
+                  </td>
+                </tr>
+              )}
+            </table>
+          </Layout.el>
+        </Base>
+      )
+    }
+  }),
+  SlideData.create({
+    elements: {},
+    render: elems => {
       return (
         <Base title='Benefits'>
             <h1 style={{textAlign: 'center', marginTop: 100}}>Cleanly separates data <br/>from implementation <br/>from syntax</h1> 

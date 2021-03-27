@@ -16,10 +16,29 @@ const fuse = fusebox({
   },
   webIndex: {
     template: 'public/index.html'
+  },
+  link: { 
+    resourcePublicRoot: 'resources' 
+  },
+  resources: {
+    // where to put resources inside of ./dist
+    resourceFolder: './resources/',
+    // how to link to resources from CSS files
+    // we gotta go up from ./styles/ to go to ./resources/
+    resourcePublicRoot: '../resources',
   }
 })
 
 //fuse.runDev()
 
-fuse.runProd()
+fuse.runProd({
+  bundles: {
+    app: {
+      path: 'app.$hash.js', publicPath: './' 
+    },
+    vendor: {
+      path: 'vendor.$hash.js', publicPath: './' 
+    }
+  }
+})
 
