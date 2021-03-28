@@ -13,7 +13,9 @@ import Algebra2Slide from './slides/Algebra2Slide'
 import CpmSlide from './slides/CpmSlide'
 import Algebra3Slide from './slides/Algebra3Slide'
 import adtSlides from './slides/adts'
+import algebraOfTypesSlides from './slides/algebraOfTypes'
 import { StylesProvider, createGenerateClassName } from '@material-ui/styles'
+import benefitsDrawbacksSlides from './slides/benefitsDrawbacks'
 
 const generateClassName = createGenerateClassName({
   productionPrefix: 'algebras',
@@ -31,7 +33,9 @@ ReactDOM.render(
       CalculatorSlide,
       EverywhereSlide,
       //CpmSlide,
-      ...adtSlides
+      ...adtSlides,
+      ...algebraOfTypesSlides,
+      ...benefitsDrawbacksSlides
     ]}/></StylesProvider>
   </React.StrictMode>,
   document.getElementById('root')

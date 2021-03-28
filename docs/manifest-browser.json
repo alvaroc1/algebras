@@ -1,21 +1,21 @@
 [
   {
-    "absPath": "/Users/acarrasco/workspace-ac/algebras/dist/app.71b9ee6b.js",
-    "browserPath": "./app.71b9ee6b.js",
-    "relativePath": "app.71b9ee6b.js",
+    "absPath": "/Users/acarrasco/workspace-ac/algebras/dist/app.0149ad128.js",
+    "browserPath": "./app.0149ad128.js",
+    "relativePath": "app.0149ad128.js",
     "type": "js",
     "webIndexed": true
   },
   {
-    "absPath": "/Users/acarrasco/workspace-ac/algebras/dist/vendor.54f2f197.js",
-    "browserPath": "./vendor.54f2f197.js",
-    "relativePath": "vendor.54f2f197.js",
+    "absPath": "/Users/acarrasco/workspace-ac/algebras/dist/vendor.041a6bab1.js",
+    "browserPath": "./vendor.041a6bab1.js",
+    "relativePath": "vendor.041a6bab1.js",
     "type": "js",
     "webIndexed": true
   },
   {
     "absPath": "/Users/acarrasco/workspace-ac/algebras/dist/styles/styles.796f15bd.css",
-    "browserPath": "/styles/styles.796f15bd.css",
+    "browserPath": "./styles/styles.796f15bd.css",
     "relativePath": "styles/styles.796f15bd.css",
     "type": "css",
     "webIndexed": true

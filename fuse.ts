@@ -15,7 +15,8 @@ const fuse = fusebox({
     '@alvaroc1/layout/Layout': '@alvaroc1/layout/src/Layout'
   },
   webIndex: {
-    template: 'public/index.html'
+    template: 'public/index.html',
+    publicPath: '.'
   },
   link: { 
     resourcePublicRoot: 'resources' 
@@ -41,4 +42,3 @@ fuse.runProd({
     }
   }
 })
-
