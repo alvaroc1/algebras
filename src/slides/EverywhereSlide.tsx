@@ -68,6 +68,7 @@ const places = {
 } as const
 
 export default SlideData.create({
+  id: 'everywhere',
   elements: {
     places: Stepper.states<keyof typeof places>(Object.keys(places) as unknown as (keyof typeof places)[], (value, active) => {
       const p = places[value]

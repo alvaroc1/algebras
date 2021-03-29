@@ -8,6 +8,7 @@ import Layout from "@alvaroc1/layout/Layout";
 
 export default [
   SlideData.create({
+    id: 'adt',
     elements: {},
     render: elems => {
       return (
@@ -21,6 +22,7 @@ export default [
     }
   }),
   SlideData.create({
+    id: 'types-are-sets',
     elements: {},
     render: elems => {
       return (
@@ -44,6 +46,7 @@ export default [
     }
   }),
   SlideData.create({
+    id: 'products',
     elements: {},
     render: elems => {
       return (
@@ -64,6 +67,7 @@ export default [
     }
   }),
   SlideData.create({
+    id: 'sums',
     elements: {},
     render: elems => {
       return (

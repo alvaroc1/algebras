@@ -9,6 +9,7 @@ import Layout from '@alvaroc1/layout/Layout'
 let calculation = ''
 
 export default SlideData.create({
+  id: 'calculator',
   elements: {
     calculator: Stepper.states(['introduction' as const, 'combinators' as const, 'elimination' as const, 'all' as const], (state, active) =>
       <div>

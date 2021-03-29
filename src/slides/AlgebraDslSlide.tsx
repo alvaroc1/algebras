@@ -5,6 +5,7 @@ import Base from '../parts/Base'
 import 'typeface-montserrat'
 
 export default SlideData.create({
+  id: 'dsl',
   elements: {},
   render: elements => 
     <Base title='Algebra ≈ DSL'>

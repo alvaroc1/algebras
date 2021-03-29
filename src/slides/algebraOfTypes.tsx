@@ -33,6 +33,7 @@ const types = {
 
 export default [
   SlideData.create({
+    id: 'algebra-of-types',
     elements: {
       groups: Stepper.states(
         Object.keys(types) as (keyof typeof types)[],

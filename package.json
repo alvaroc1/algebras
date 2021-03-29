@@ -8,7 +8,7 @@
   "dependencies": {
     "@alvaroc1/basis": "^0.0.1-h",
     "@alvaroc1/layout": "1.0.3",
-    "@alvaroc1/present": "0.0.11",
+    "@alvaroc1/present": "0.0.12",
     "@material-ui/styles": "4.11.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

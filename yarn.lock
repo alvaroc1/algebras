@@ -20,15 +20,16 @@
     react "^16.14.0"
     react-dom "^16.14.0"
 
-"@alvaroc1/present@0.0.11":
-  version "0.0.11"
-  resolved "https://registry.npmjs.org/@alvaroc1/present/-/present-0.0.11.tgz#3399860fcf7de5fdea71c25173a1f34147861ef6"
-  integrity sha512-da3Nl82d0ntoYqS7LHS1cIyymJFqoiqDg69vvhcZmMAgbvgm3I47O2Jx488vrUTD6D3Jx9hT61GBhaFfeuf4xg==
+"@alvaroc1/present@0.0.12":
+  version "0.0.12"
+  resolved "https://registry.npmjs.org/@alvaroc1/present/-/present-0.0.12.tgz#72778284c4e3dda8c8e6c44744403738e2db7ef3"
+  integrity sha512-dWUQVzFU0lFfiPFTKvo+NksOeEkAP5qDxZ7fy2ZDJ8mGcNVi4UdoX1Xy4Yx5PZgPamldd45JRLI/Tu6fRCt/Qw==
   dependencies:
     "@alvaroc1/layout" "1.0.3"
     "@material-ui/styles" "4.11.3"
     "@types/common-tags" "^1.8.0"
     "@types/node" "^13.13.2"
+    "@types/qs" "^6.9.6"
     "@types/react" "^16.9.34"
     "@types/react-dom" "^16.9.6"
     "@types/react-syntax-highlighter" "10.1.0"
@@ -256,6 +257,11 @@
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/qs@^6.9.6":
+  version "6.9.6"
+  resolved "https://registry.npmjs.org/@types/qs/-/qs-6.9.6.tgz#df9c3c8b31a247ec315e6996566be3171df4b3b1"
+  integrity sha512-0/HnwIfW4ki2D8L8c9GVcG5I72s9jP5GSLVF0VIXDW00kmIpA6O33G7a8n59Tmh7Nz0WUC3rSb7PTY/sdW2JzA==
 
 "@types/react-dom@*", "@types/react-dom@^16.9.6":
   version "16.9.8"
