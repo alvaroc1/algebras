@@ -23,11 +23,24 @@ const types = {
                     }`],
   ],
   equations: [
-    ['1 + a', 'Option[A]'],
-    ['x = 1 + a * x', dedent`enum List[A] {
-                              case Nil
-                              case Cons (head: A, tail: List[A])
-                            }`]
+    ['1 + a', dedent`
+                    // categorical
+                    type Option[A] = Either[Unit, A]
+
+                    // canonical
+                    enum Option[+A] {
+                      case None
+                      case Some(value: A)
+                    }`],
+    ['x = 1 + a * x', dedent`
+                        // categorical
+                        type List[A] = Either[Unit, (A, List[A])]
+
+                        // canonical
+                        enum List[+A] {
+                          case Nil
+                          case Cons(head: A, tail: List[A])
+                        }`]
   ]
 }
 
